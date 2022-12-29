@@ -103,17 +103,17 @@
         <MVC v-if="value1"></MVC>
         <Web v-if="value3"></Web>
 
-        <v-col cols="12" class="imgHover" v-if="value2">
-          <v-row class="fill-height" align="center" justify="center">
+        <v-col cols="12" sm="12" xs="12" class="imgHover" v-if="value2">
+          <v-row class="fill-height" justify="center">
             <template v-for="(item, i) in items" :key="i">
-              <v-col cols="12" md="4" v-if="item.num<7">
+              <v-col cols="12" md="4" xs="12" sm="6" v-if="item.num<7">
                 <v-hover v-slot="{ isHovering, props }">
                   <v-card
                     :elevation="isHovering ? 12 : 2"
                     :class="{ 'on-hover': isHovering }"
                     v-bind="props"
                   >
-                    <v-img :src="item.img" height="325px" @click=change(item.tp) cover></v-img>
+                    <v-img :src="item.img"  height="325px" @click=change(item.tp) cover></v-img>
                   </v-card>
                 </v-hover>
               </v-col>
@@ -143,7 +143,7 @@
       <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
           <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="!value4">Load More</v-btn>
-          <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="value4">Display Less</v-btn>
+          <v-btn color="#FBDF7E" class="mt-4" @click="disLess" v-if="value4">Display Less</v-btn>
         </div>
       </v-col>
 
@@ -338,7 +338,7 @@ export default defineComponent({
   margin-right: 8px;
 }
 .imgHover {
-  padding: 0 200px;
+  padding: 0 50px;
 }
 .pre {
   width: 100%;
