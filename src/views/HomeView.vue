@@ -84,7 +84,7 @@
               <h3>Software Tools</h3>
               <p class="text-black">Eclipse, VS Code, VS Studio, HBuildX, Git Bash</p>
 
-              <v-btn href="122.pdf" dark color="yellow" class="mt-4" download>Download Resume</v-btn>
+              <v-btn href="UpdatedResume.pdf" dark color="yellow" class="mt-4" download>Download Resume</v-btn>
               <br/>
             </v-col>
           </v-row>
