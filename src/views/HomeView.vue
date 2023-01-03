@@ -142,7 +142,7 @@
 
       <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
-          <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="!value4">Load More</v-btn>
+          <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="!value4" v-show="value5">Load More</v-btn>
           <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="value4">Display Less</v-btn>
         </div>
       </v-col>
@@ -233,7 +233,8 @@ export default defineComponent({
       value1: false,
       value2: true,
       value3: false,
-      value4: false
+      value4: false,
+      value5: true,
     }
   },
 
@@ -246,16 +247,19 @@ export default defineComponent({
       this.value1 = true;
       this.value2 = false;
       this.value3 = false;
+      this.value5 = false;
     },
     showDesign() {
       this.value1 = false;
       this.value2 = false;
       this.value3 = true;
+      this.value5 = false;
     },
     showAll() {
       this.value1 = false;
       this.value2 = true;
       this.value3 = false;
+      this.value5 = true;
     },
     change(number) {
       if(number ==1){
