@@ -143,7 +143,7 @@
       <v-col cols="12" sm="12">
         <div class="d-flex justify-center mb-6">
           <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="!value4">Load More</v-btn>
-          <v-btn color="#FBDF7E" class="mt-4" @click="disLess" v-if="value4">Display Less</v-btn>
+          <v-btn color="#FBDF7E" class="mt-4" @click="disMore" v-if="value4">Display Less</v-btn>
         </div>
       </v-col>
 
