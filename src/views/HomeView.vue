@@ -152,6 +152,11 @@
 
             <div class="child">
               <h1>Contact info.</h1>
+              <router-link to="/contact">
+                <v-btn class="mt-4" color="#DBAF7E">Send me Message</v-btn>
+              </router-link>
+              <router-v></router-v>
+              <br>
               <v-btn icon="fas fa-map-marker-alt" color class="mt-10" variant="outlined"></v-btn>
               <br>
               <span class="text-caption">Ottawa,ON</span>
@@ -287,6 +292,13 @@ export default defineComponent({
 });
 </script>
 <style scoped>
+
+a{
+  text-decoration: none;
+}
+.router-link-active{
+  text-decoration: none;
+}
 .v-container {
   padding: 16px 0 16px 0;
 }
@@ -318,15 +330,6 @@ export default defineComponent({
   width: 50%;
   background: black;
   transform: skew(0deg, -6deg);
-}
-.egg {
-  display: block;
-  margin-left: 100px;
-  margin-top: 50px;
-  width: 356px;
-  height: 300px;
-  background-color: #fbdf7e;
-  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 .first {
   width: 100%;
